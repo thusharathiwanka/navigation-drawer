@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+ul {
+  list-style: none;
+  width: 20rem;
+  background-color: #6843cf;
+}
+
+.navigation {
+  position: relative;
+}
+
+.navigation ul {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+
+.navigation span {
+  display: inline-block;
+  color: white;
+}
+
+.navigation a span:first-child {
+  margin-right: 1.5rem;
+}
+
+.toggle {
+  width: 4rem;
+  height: 4rem;
+  background: #6843cf;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: white;
+  font-size: 1.8rem;
+  transform: translateY(-50%);
+  border: solid 6px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
